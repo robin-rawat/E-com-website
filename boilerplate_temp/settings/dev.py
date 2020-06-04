@@ -10,10 +10,9 @@ INSTALLED_APPS += [
 
 ]
 
-MIDDLEWARE += [
+MIDDLEWARE += (
 'debug_toolbar.middleware.DebugToolbarMiddleware',
-
-]
+)
 
 
 #DEBUG TOOLBAR SETTINGS
