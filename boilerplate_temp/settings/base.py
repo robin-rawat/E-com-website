@@ -7,8 +7,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'fh#++qgvzx19+a762wx_+-6=m=e#dx=!$=)68g9f5&_!_r36=r'
-
+SECRET_KEY = config('SECRET_KEY')
 
 # Application definition
 
@@ -30,6 +29,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -37,11 +37,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-MIDDLEWARE_CLASSES = (
-    # Simplified static file serving.
-    'whitenoise.middleware.WhiteNoiseMiddleware'
-)
 
 ROOT_URLCONF = 'boilerplate_temp.urls'
 
