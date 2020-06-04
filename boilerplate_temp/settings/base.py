@@ -38,6 +38,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+MIDDLEWARE_CLASSES = (
+    # Simplified static file serving.
+    'whitenoise.middleware.WhiteNoiseMiddleware'
+)
+
 ROOT_URLCONF = 'boilerplate_temp.urls'
 
 TEMPLATES = [
