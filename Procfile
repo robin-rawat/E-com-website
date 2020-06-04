@@ -1,1 +1,3 @@
-web: gunicorn boilerplate_temp.wsgi
+web: gunicorn boilerplate_temp.wsgi:application --log-file - --log-level debug
+python manage.py collectstatic --noinput
+manage.py migrate
