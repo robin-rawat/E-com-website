@@ -1,1 +1,1 @@
-web: gunicorn boilerplate_temp.wsgi
+web: gunicorn boilerplate_temp:application
