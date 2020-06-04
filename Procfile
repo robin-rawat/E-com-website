@@ -1,1 +1,1 @@
-web: gunicorn boilerplate_temp:application
+web: gunicorn boilerplate_temp.wsgi --log-file -
