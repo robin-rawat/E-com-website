@@ -4,9 +4,9 @@ from django.db import models
 from django.shortcuts import reverse
 
 CATEGOTY_CHOICES = (
-	('B1','Bundle 1'),
-	('B2','Bundle 2'),
-	('B3','Bundle 3'),
+	('B1','Most Bought'),
+	('B2','Essentials'),
+	('B3','Top rated'),
 )
 
 LABEL_CHOICES = (
